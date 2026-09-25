@@ -1,6 +1,6 @@
 # Architecture
 
-The company site is a static React/Vite application built into an immutable Docker image and served by nginx. No application secrets are required. The user application is hosted separately at app.solosync.live.
+Static React/Vite site compiled into an immutable Docker image and served by nginx. No runtime secrets are required.
 
 ```mermaid
 graph LR
@@ -8,4 +8,4 @@ graph LR
  Browser --> App[app.solosync.live]
 ```
 
-The same image can be deployed to Azure Container Apps, GCP Cloud Run, or OCI Container Instances. Cloud-specific provisioning belongs in the organization infra repository.
+Deploy the same image to Azure Container Apps, GCP Cloud Run, or OCI Container Instances. Cloud-specific provisioning belongs in solosynctech/infra.
